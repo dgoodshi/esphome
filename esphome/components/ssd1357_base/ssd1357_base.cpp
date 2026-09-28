@@ -57,7 +57,7 @@ void SSD1357::setup() {
   this->command(SSD1357_CLOCKDIV);
   this->data(0x20);  // not f1
   this->command(SSD1357_MUXRATIO);
-  this->data(0x7F); / same as 127
+  this->data(0x7F); // same as 127
   this->command(SSD1357_DISPLAYOFFSET);
   this->data(0x00);
 //  this->command(SSD1357_SETGPIO);
