@@ -13,8 +13,7 @@ SSD1357 = ssd1357_base_ns.class_("SSD1357", cg.PollingComponent, display.Display
 SSD1357Model = ssd1357_base_ns.enum("SSD1357Model")
 
 MODELS = {
-    "SSD1357_128X96": SSD1357Model.SSD1357_MODEL_128_96,
-    "SSD1357_128X128": SSD1357Model.SSD1357_MODEL_128_128,
+    "SSD1357_64X128": SSD1357Model.SSD1357_MODEL_64X128,
 }
 
 SSD1357_MODEL = cv.enum(MODELS, upper=True, space="_")
