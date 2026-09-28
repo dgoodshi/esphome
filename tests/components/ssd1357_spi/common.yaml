@@ -1,6 +1,6 @@
 display:
   - platform: ssd1357_spi
-    model: "SSD1357 128x128"
+    model: "SSD1357 64x128"
     cs_pin: ${cs_pin}
     dc_pin: ${dc_pin}
     reset_pin: ${reset_pin}
