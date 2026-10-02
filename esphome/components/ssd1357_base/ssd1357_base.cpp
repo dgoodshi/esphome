@@ -95,8 +95,8 @@ void SSD1357::setup() {
 }
 void SSD1357::display() {
   this->command(SSD1357_SETCOLUMN);  // set column address
-  this->data(0x20);                  // set column start address was 0
-  this->data(0x5F);                  // set column end address was 7f
+  this->data(0x00);                  // set column start address was 0
+  this->data(0x7F);                  // set column end address was 7f
   this->command(SSD1357_SETROW);     // set row address
   this->data(0x00);                  // set row start address
   this->data(0x7F);                  // set last row
