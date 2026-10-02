@@ -7,7 +7,7 @@
 namespace esphome::ssd1357_base {
 
 enum SSD1357Model {
-  SSD1357_MODEL_64_128 = 0,
+  SSD1357_MODEL_128_64 = 0,
 };
 
 class SSD1357 : public display::DisplayBuffer {
@@ -44,7 +44,7 @@ class SSD1357 : public display::DisplayBuffer {
   size_t get_buffer_length_();
   const char *model_str_();
 
-  SSD1357Model model_{SSD1357_MODEL_64_128};
+  SSD1357Model model_{SSD1357_MODEL_128_64};
   GPIOPin *reset_pin_{nullptr};
   bool is_on_{false};
   float brightness_{1.0};
