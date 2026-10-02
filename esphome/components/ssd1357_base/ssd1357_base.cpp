@@ -134,7 +134,7 @@ void SSD1357::turn_off() {
 }
 int SSD1357::get_height_internal() {
   switch (this->model_) {
-    case SSD1357_MODEL_64_128:
+    case SSD1357_MODEL_128_64:
       return 64;
     default:
       return 0;
@@ -142,7 +142,7 @@ int SSD1357::get_height_internal() {
 }
 int SSD1357::get_width_internal() {
   switch (this->model_) {
-    case SSD1357_MODEL_64_128:
+    case SSD1357_MODEL_128_64:
       return 128;
     default:
       return 0;
@@ -190,8 +190,8 @@ void SSD1357::init_reset_() {
 }
 const char *SSD1357::model_str_() {
   switch (this->model_) {
-    case SSD1357_MODEL_64_128:
-      return "SSD1357 64x128";
+    case SSD1357_MODEL_128_64:
+      return "SSD1357 128X64";
     default:
       return "Unknown";
   }
