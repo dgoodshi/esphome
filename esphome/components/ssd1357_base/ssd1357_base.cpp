@@ -156,7 +156,7 @@ void HOT SSD1357::draw_absolute_pixel_internal(int x, int y, Color color) {
     return;
   const uint32_t color565 = display::ColorUtil::color_to_565(color);
   // where should the bits go in the big buffer array? math...
-  uint16_t pos = (x + 0x20 + y * this->get_width_internal()) * SSD1357_BYTESPERPIXEL;
+  uint16_t pos = (x + y * this->get_width_internal()) * SSD1357_BYTESPERPIXEL;
   this->buffer_[pos++] = (color565 >> 8) & 0xff;
   this->buffer_[pos] = color565 & 0xff;
 }
